@@ -1,0 +1,38 @@
+/*
+* Description: Buttons and Row Styling
+* Author: Victoria Pruim 
+* Date: February 8, 2020
+*/
+
+/******** Button Style ********/
+.buttonContainer{
+    display: inline-flex;
+}
+.btn{
+    -webkit-appearance: none;
+    margin: 10px;
+    background: white;
+    border: 1px solid #888888;
+    box-shadow: 2px 2px #888888;
+}
+.btn:hover{
+    box-shadow: 0 0;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: none;
+}
+
+/******** Row Style ********/
+.rowsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    max-width: 480px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px;
+    padding-left: 10px;
+    border: 1px solid #888888;
+}
