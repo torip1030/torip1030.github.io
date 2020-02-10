@@ -1,7 +1,11 @@
 /*
 * Description: Buttons and Row Styling
 * Author: Victoria Pruim 
-* Date: February 8, 2020
+* Date Created: February 8, 2020
+*
+*   Date Edited         Change Description
+*   ------------------+--------------------
+*   February 9, 2020    Added @media queries for mobile browsers
 */
 
 /******** Button Style ********/
@@ -22,6 +26,13 @@
 .btn:focus{
     outline: none;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px) { 
+    .btn{
+        font-size: 20px;  
+    }
+} 
 
 /******** Row Style ********/
 .rowsContainer{
@@ -35,4 +46,12 @@
     margin: 10px;
     padding-left: 10px;
     border: 1px solid #888888;
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px) { 
+    .row{
+        font-size: 30px;  
+        max-width: 600px;
+    }
 }
